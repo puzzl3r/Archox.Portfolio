@@ -1,0 +1,108 @@
+#header {
+  background: #323647;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #ffffff;
+  padding: 35px;
+}
+
+.navbar a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 500;
+  position: relative;
+  transition: color 0.3s ease;
+}
+.navbar a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 0;
+  height: 2px;
+  background-color: #ff6d5a;
+  transition: width 0.3s ease;
+}
+
+.navbar a:hover::after {
+  width: 100%;
+}
+
+nav .btn {
+  background-color: #ff7e5f;
+  padding: 10px 16px;
+  border-radius: 5px;
+  color: #fff;
+}
+
+.navbar a:hover {
+  color: #ff6d5a;
+}
+
+.hire-btn {
+  padding: 10px 20px;
+  background-color: #ff6d5a;
+  border: none;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.hire-btn:hover {
+  background-color: #e65948;
+}
+
+
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 24px;  
+}
+
+.nav-links li {
+  list-style: none;
+}
+
+.nav-links a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.menu-toggle {
+  display: none;
+}
+
+.menu-btn {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 768px) {
+  .nav-links {
+    width: 100%;
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    text-align: center;
+    background: #333333;
+    padding-bottom: 20px;
+  }
+  
+  .menu-btn {
+    display: inline-block;
+  }
+
+  .menu-toggle:checked~.nav-links {
+    display: flex;
+  }
+}

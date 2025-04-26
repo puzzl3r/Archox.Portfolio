@@ -1,0 +1,40 @@
+.card {
+    width: 100%;
+    background: #475166;
+    border: 1px solid #ff7e5f;
+    border-radius: 14px;
+    overflow: hidden;
+  }
+  
+  .card-container {
+    display: flex;
+    text-align: center;
+    gap: 24px;
+    padding: 50px;
+    
+
+  }
+  .card-header img {
+    color: #ff7e5f;
+    width: 30%;
+    object-fit: cover;
+    box-shadow: 0 0 20px #ff7e5f;
+    border-radius: 50%;
+    
+  }
+  .card image{
+    box-shadow: 0 0 20px #ff7e5f;
+  }
+  
+  .card-header h2 {
+    font-size: 20px;
+    padding: 15px 18px;
+  }
+  
+  .card-body {
+    padding: 0 18px;
+  }
+  
+  .card-footer {
+    padding: 20px 18px;
+  }
